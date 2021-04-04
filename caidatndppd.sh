@@ -3,7 +3,7 @@
 # OS: Centos 7
 # Description: Script install NDP Proxy Daemon, active full subnet ipv6.
 
-IPv6SUBNET="xxxx:xxxx:xxxx:xxxx::/64"
+IPv6SUBNET="2604:6600:8:b::/64"
 
 echo "######################## CONFIG SYSCTL #########################"
 echo "net.ipv6.conf.all.accept_ra = 2" >> /etc/sysctl.conf
