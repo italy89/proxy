@@ -24,8 +24,8 @@ fi
 	#make -f Makefile.Linux
 	#ulimit -u unlimited -n 999999 -s 16384
 	
-	wget https://github.com/avcvv/ipv6proxies/raw/master/3proxycfg.sh
-	wget https://github.com/avcvv/ipv6proxies/raw/master/Genips.sh
+	wget https://github.com/italy89/proxy/raw/main/3proxycfg.sh
+	wget https://github.com/italy89/proxy/raw/main/Genips.sh
 	chmod 0755 Genips.sh
 	chmod 0755 3proxycfg.sh
 	
