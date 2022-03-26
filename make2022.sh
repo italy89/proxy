@@ -1,17 +1,3 @@
-Skip to content
- 
-Search…
-All gists
-Back to GitHub
-@italy89 
-@italy89
-italy89/proxypc8.sh Secret
-Last active 12 months ago
-0
- Code
- Revisions 6
-<script src="https://gist.github.com/italy89/08a35824ba17486712a3f3715324dddc.js"></script>
-proxypc8.sh
 #!/bin/sh
 random() {
 	tr </dev/urandom -dc A-Za-z0-9 | head -c5
@@ -65,7 +51,9 @@ setuid 65535
 stacksize 6291456 
 flush
 auth none
+
 users $(awk -F "/" 'BEGIN{ORS="";} {print $1 "::" $2 " "}' ${WORKDATA})
+
 $(awk -F "/" '{print "auth none\n" \
 "proxy -6 -n -a -p" $4 " -i" $3 " -e"$5"\n" \
 "flush\n"}' ${WORKDATA})
@@ -148,20 +136,3 @@ bash /etc/rc.local
 gen_proxy_file_for_user
 
 upload_proxy
-@italy89
- 
-Leave a comment
-No file chosen
-Attach files by dragging & dropping, selecting or pasting them.
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
